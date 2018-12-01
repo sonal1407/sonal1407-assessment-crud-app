@@ -1,0 +1,18 @@
+<h1> Edit Student</h1>
+<form [formGroup]="editstudentFrom" (ngSubmit)="editstudent(editstudentFrom.value)">
+  <label>name:</label><br>
+  <input type="text" placeholder="name" formControlName="name"><br>
+  <input type="text" placeholder="mobileNo" formControlName="mobileNo">
+  <br>
+  <input type="text" placeholder="address" formControlName="address">
+  <br>
+  <input type="text" placeholder="pincode" formControlName="pincode">
+  <br>
+  <input type="text" placeholder="city" formControlName="city">
+  <br>
+  <input type="text" placeholder="state" formControlName="state">
+  <br>
+
+  <button type="submit" [disabled]="!editstudentFrom.valid">Save</button>
+
+</form>

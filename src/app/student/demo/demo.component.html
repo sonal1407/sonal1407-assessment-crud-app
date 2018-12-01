@@ -1,0 +1,11 @@
+<table border="1px solid">
+  <ng-container *ngFor="let th of heading">
+    <th>{{th}}</th>
+  </ng-container>
+  <tr *ngFor="let  stud of studentList">
+    <td *ngFor="let t of heading">
+      {{stud[t]}}
+    </td>
+    
+  </tr>
+</table>

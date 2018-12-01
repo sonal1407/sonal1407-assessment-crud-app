@@ -1,0 +1,31 @@
+{
+  "student": [
+    {
+      "id": 102,
+      "name": "sonal",
+      "mobileNo": "986156454",
+      "address": "valsad",
+      "pincode": "461415",
+      "city": "valsad",
+      "state": "gujarat123"
+    },
+    {
+      "id": 103,
+      "name": "dsf",
+      "mobileNo": "9785352199",
+      "address": "valsad",
+      "pincode": "396001",
+      "city": "Gujrat",
+      "state": "Andhra Pradesh(Hyderabad)"
+    },
+    {
+      "id": 104,
+      "name": "dsf",
+      "mobileNo": "9785352199",
+      "address": "valsad123",
+      "pincode": "396001",
+      "city": "Gujrat",
+      "state": "Andhra Pradesh(Hyderabad)"
+    }
+  ]
+}
