@@ -26,6 +26,15 @@
       "pincode": "396001",
       "city": "Gujrat",
       "state": "Andhra Pradesh(Hyderabad)"
+    },
+    {
+      "id": 105,
+      "name": "sonal",
+      "mobileNo": "123456789",
+      "address": "valsad",
+      "pincode": "461415",
+      "city": "valsad",
+      "state": "gujarat"
     }
   ]
 }

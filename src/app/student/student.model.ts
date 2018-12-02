@@ -1,5 +1,6 @@
 /**
  * @author sonal prajapati
+ * @description create class for the model type
  * @prop id: it return  number type value
  * @prop name it return string type value
  * * @prop address it return string type value

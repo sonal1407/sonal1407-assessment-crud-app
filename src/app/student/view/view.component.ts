@@ -1,6 +1,6 @@
 /**
  * @author sonal prajpati
- * * @description this class is used for a view the data of the user 
+ * * @description this class is used for a view the data of the user
  */
 import { Component, OnInit, OnDestroy, AfterViewChecked } from '@angular/core';
 // -----------------------//
@@ -23,7 +23,7 @@ export class ViewComponent implements OnInit, OnDestroy {
   public heading: any[];
   constructor(private studentService: StudentService, private route: Router) {
     this.students = [];
-    this.heading = ['id', 'name', 'mobileNo', 'address', 'pincode', 'city', 'state', 'action'];
+    this.heading = ['id', 'name', 'mobile_No', 'address', 'pincode', 'city', 'state', 'action'];
   }
 
   ngOnInit() {
@@ -46,6 +46,7 @@ export class ViewComponent implements OnInit, OnDestroy {
    * @description delete the particular id wise reord
    */
   public onDelete(id: number) {
+    console.log('kjgbh');
     this.studentService.deleteStudent(id).subscribe(() => {
       this.getStudent();
     });
