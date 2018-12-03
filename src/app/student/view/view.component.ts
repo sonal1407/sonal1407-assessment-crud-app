@@ -3,11 +3,12 @@
  * * @description this class is used for a view the data of the user
  */
 import { Component, OnInit, OnDestroy, AfterViewChecked } from '@angular/core';
+import { ISubscription } from 'rxjs/Subscription';
+import { Router } from '@angular/router';
 // -----------------------//
 import { StudentService } from '../student.service';
 import { Student } from '../student.model';
-import { ISubscription } from 'rxjs/Subscription';
-import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-view',
@@ -22,6 +23,7 @@ export class ViewComponent implements OnInit, OnDestroy {
   private subscription: ISubscription;
   public heading: any[];
   constructor(private studentService: StudentService, private route: Router) {
+//define variable
     this.students = [];
     this.heading = ['id', 'name', 'mobile_No', 'address', 'pincode', 'city', 'state', 'action'];
   }
@@ -51,6 +53,11 @@ export class ViewComponent implements OnInit, OnDestroy {
       this.getStudent();
     });
   }
+
+  /**
+   * @param id   particular id of student
+   * @description edit the particular id wise reord
+   */
   public onEdit(id: number) {
     console.log('jkb');
     this.route.navigate(['/student/edit' + '/' + id]);
