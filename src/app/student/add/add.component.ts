@@ -4,10 +4,11 @@
  */
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, AbstractControl } from '@angular/forms';
+import { Router } from '@angular/router';
 // ---------------------------//
 import { StudentService } from '../student.service';
 import { Student } from '../student.model';
-import { Router } from '@angular/router';
+
 
 
 @Component({
@@ -49,6 +50,5 @@ export class AddComponent implements OnInit {
       this.route.navigate(['/student/view']);
     });
   }
-
 }
 
